@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Figtree", sans-serif;;
+      height: 100vh;
+    }
+
+    #card-container {
+      border-radius: 0.8rem;
+      border-style: solid;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 1.5rem;
+      margin: auto;
+      width: 24rem;
+    }
+
+    #illustration-img {
+      border-radius: 0.5rem;
+      display: inline-block;
+    }
+
+    #text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    #date {
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    #tag {
+      font-size: 0.875rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    #tag span {
+      border-radius: 0.2rem;
+      display: inline;
+      background: hsl(47 88 63);
+      padding: 0.4rem 0.8rem;
+    }
+
+    #main-text {
+      color: hsl(0 0 42);
+    }
+
+    #avatar-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.875rem;
+      font-weight: 800;
+    }
+    #avatar-container img {
+      width: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="card-container">
+    <img id="illustration-img" src="/assets/images/illustration-article.svg">
+    <div id="text-container">
+      <p id="tag"><span>Learning</span></p>
+      <p id="date">Published 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+      <p id="main-text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+    <footer id="avatar-container">
+      <img id="avatar-img" src="/assets/images/image-avatar.webp">
+        <p>Greg Hooper</p>
+    </footer>
+  </div>
+</body>
+</html>`
